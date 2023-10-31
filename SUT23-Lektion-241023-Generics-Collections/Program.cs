@@ -171,11 +171,11 @@
             };
 
 
-            List<Employee> listEmp = new List<Employee>();
+            //List<Employee> listEmp = new List<Employee>();
 
-            listEmp.Add(Em1);
-            listEmp.Add(Em2);
-            listEmp.Add(Em3);
+            //listEmp.Add(Em1);
+            //listEmp.Add(Em2);
+            //listEmp.Add(Em3);
 
             //Insert
             //listEmp.Insert(1, Em4);
@@ -229,17 +229,139 @@
 
 
 
-          //List<Employee> result =  listEmp.FindAll(e => e.Salary < 25000);
+            //List<Employee> result =  listEmp.FindAll(e => e.Salary < 25000);
 
-          //  foreach(Employee item in result)
-          //  {
-          //      Console.WriteLine("ID = {0} \nName :{1} \nSalary : {2}", item.ID, item.Name, item.Salary);
-          //  }
+            //  foreach(Employee item in result)
+            //  {
+            //      Console.WriteLine("ID = {0} \nName :{1} \nSalary : {2}", item.ID, item.Name, item.Salary);
+            //  }
 
 
 
-           int index = listEmp.FindIndex(e => e.Salary == 25000);
-            Console.WriteLine("Index of 25000 : " + index);
+            //int index = listEmp.FindIndex(e => e.Salary == 25000);
+            // Console.WriteLine("Index of 25000 : " + index);
+
+
+
+            //Dictionary<int, Employee> SUT23Dicitinonary = new Dictionary<int, Employee>();
+
+            //SUT23Dicitinonary.Add(Em1.ID, Em1);
+            //SUT23Dicitinonary.Add(Em2.ID, Em2);
+            //SUT23Dicitinonary.Add(Em3.ID, Em3);
+            ////SUT23Dicitinonary.Add(Em4.ID, Em4);
+
+
+            //Employee em;
+            //if(SUT23Dicitinonary.TryGetValue(120, out em))
+            //{
+            //    Console.WriteLine("Item with ID : {0}", em.ID);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Item Finns ej");
+            //}
+
+
+            //Console.WriteLine("The Number of Items in The Dicitionary : " + SUT23Dicitinonary.Count);
+
+
+            //Employee[] EmArray = new Employee[4];
+            //EmArray[0] = Em1;
+            //EmArray[1] = Em2;
+            //EmArray[2] = Em3;
+            //EmArray[3] = Em4;
+
+
+            //Dictionary<int,Employee> FromArrayToDici =  EmArray.ToDictionary(y => y.ID  , e => e);
+
+            //  foreach(KeyValuePair<int,Employee> item in FromArrayToDici)
+            //  {
+            //      Console.WriteLine("The Key is = " + item.Key);
+
+            //      Employee e = item.Value;
+
+            //      Console.WriteLine("ID = {0} Name = {1} Salary = {2}", e.ID, e.Name, e.Salary);
+
+
+            //  }
+
+
+
+            //if(!SUT23Dicitinonary.ContainsKey(Em4.ID))
+            // {
+            //     SUT23Dicitinonary.Add(Em4.ID, Em4);
+            // }
+
+
+            //foreach(Employee item in SUT23Dicitinonary.Values)
+            // {
+            //     Console.WriteLine("ID = {0} Name = {1} Salary = {2}", item.ID, item.Name, item.Salary);
+            // }
+
+
+            //Console.WriteLine(SUT23Dicitinonary.Count(e => e.Value.Salary > 24000));
+
+
+
+
+
+            //Queue 
+
+            //Queue<Employee> SUT23Queue = new Queue<Employee>();
+
+
+            ////SUT23Queue.Enqueue(Em1);
+            //SUT23Queue.Enqueue(Em2);
+            //SUT23Queue.Enqueue(Em3);
+            //SUT23Queue.Enqueue(Em4);
+
+
+            //Employee emToDelete = SUT23Queue.Dequeue();
+            // Console.WriteLine(emToDelete.ID + " " + emToDelete.Name);
+
+
+            // Employee emToDelete2 = SUT23Queue.Dequeue();
+            // Console.WriteLine(emToDelete2.ID + " " + emToDelete2.Name);
+
+
+            //Employee peekSUT23 = SUT23Queue.Peek();
+            // Console.WriteLine(peekSUT23.ID + " " + peekSUT23.Name);
+
+
+            // Employee peekSUT232 = SUT23Queue.Peek();
+            // Console.WriteLine(peekSUT232.ID + " " + peekSUT232.Name);
+            // Console.WriteLine("Items in The Queue = " + SUT23Queue.Count);
+
+
+
+
+           //if(SUT23Queue.Contains(Em1))
+           // {
+           //     Console.WriteLine("Item finns i Queue");
+           // }
+           // else
+           // {
+           //     Console.WriteLine("Item Finns inte i Queue");
+           // }
+
+           
+
+           /// Stack
+           /// 
+
+
+            Stack<Employee> SUT23Stack = new Stack<Employee>();
+
+            SUT23Stack.Push(Em1);
+            SUT23Stack.Push(Em2);
+            SUT23Stack.Push(Em3);
+            Queue
+
+            Employee emPop =SUT23Stack.Pop();
+            Console.WriteLine("ID = {0}, Name = {1}",emPop.ID,emPop.Name);
+
+            Console.WriteLine("Items in The Stack = " + SUT23Stack.Count);
+
             Console.ReadKey();
         }
     }
